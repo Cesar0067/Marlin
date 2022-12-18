@@ -538,7 +538,7 @@
 #define TEMP_SENSOR_5 0
 #define TEMP_SENSOR_6 0
 #define TEMP_SENSOR_7 0
-#define TEMP_SENSOR_BED 0
+#define TEMP_SENSOR_BED 1
 #define TEMP_SENSOR_PROBE 0
 #define TEMP_SENSOR_CHAMBER 0
 #define TEMP_SENSOR_COOLER 0
@@ -1160,7 +1160,8 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 424.9 }   //default E0 was 93, 424.9 is for Ender Sprite Extruder
+                                      /*SET FOR 128 MICROSTEPS*/
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 640, 640, 3200, 3299 }   //default E0 was 93, 424.9 is for Ender Sprite Extruder; default for 16 microsteps: { 80, 80, 400, 424.9 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
