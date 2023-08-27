@@ -536,7 +536,7 @@
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  *
  */
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 5
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -1168,7 +1168,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 640, 640, 3200, 429.4 }    //settings for 128 microsteps ; Microsteps:8 { 80, 80, 400, 429.4 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 640, 640, 3200, 690 }    //settings for 128 microsteps ; Microsteps:8 { 80, 80, 400, 429.4 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1653,7 +1653,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
